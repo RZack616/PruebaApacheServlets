@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Comentarios</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body bgcolor="#A34BE5"> =>
+        <div id="datos">
+            <fieldset>
+                <legend>Tarjetas</legend>
+                <!--<form action="" name="datosL" onsubmit="return validarDatos();">-->
+                <form action="tarjetas" method="post"><!--name="datosL"-->
+                    <label>Tarjeta:</label><input type="text" id="tarjeta" name="tarjetaa" maxlength="50"><br/><br/>
+                    <label>Comentario:</label><textarea  name="descripcion" maxlength="500"></textarea><br/><br/><!--<!-- type="text" id="coment" name="coment" maxlength="500"></textarea> -->
+                    <input type="submit"  value="Agregar"><br/><br/>
+                </form>
+            </fieldset>
+        </div><br>
+        <!--<button type="button" onclick="validarDatos();" id="agregar" name="agregar">Agregar</button>-->
+<!--        <input type="submit"  value="Agregar">-->
+        <br>
+<!--        <div id="comentarios">
+        </div>
+        <div>
+            <p></p>
+        </div>
+        <br><br>-->
+        <a href="index.html"><button>Regresar</button></a>
+    </body>
+<!--    <script>
+
+        function validarDatos() {
+            //Datos del libro
+            var nomTar = document.getElementById("tarjeta");
+            var comentario = document.getElementById("coment");
+
+            var ccomentarios = document.getElementById("tarjeta");
+            var elemento = document.createElement("p");
+
+            var form1 = document.datosL;
+
+            if (form1.tarjeta.value == 0 || form1.comentario.value == 0) {
+                alert("Se deben llenar todos los campos");
+                return false;
+            } else {
+                elemento.innerHTML = "<h4>Comentario de la tarjeta</h4>Titulo: " + nomTar.value + " <br> " +
+                        "Comentario: " + comentario.value + " <br> ";
+
+                ccomentarios.appendChild(elemento);
+            }
+        }
+    </script>-->
+</html>
